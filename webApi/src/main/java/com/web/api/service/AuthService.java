@@ -72,7 +72,7 @@ public class AuthService {
         if (!BCrypt.checkpw(motDePasse, utilisateur.getMotDePasse())) {
             throw new Exception("Mot de passe incorrect");
         }
-        
+    
         return utilisateur;
     }
     
